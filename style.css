@@ -18,29 +18,23 @@ body {
     padding: 0;
 }
 
-/* 章節標題美化 */
-h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #7bb4da;
-    padding-bottom: 8px;
-    margin-top: 20px;
+/* 深⾊主題樣式 (JavaScript 動態切換) */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
 }
 
-h3 {
-    color: #333333;
-}
 
 /* 導覽列超連結懸停效果 */
 nav a:hover {
     color: #aac9ff;
-    /* 滑⿏移上去變明亮⾦⿈⾊ */
+    /* 滑⿏移上去變紫藍色 */
     text-decoration: underline;
 }
-
 /* 主要內容章節區塊美化 */
 section {
     background-color: #ffffff;
-    max-width: 800px;
+    max-width: 900px;
     /* 設定最⼤寬度 */
     margin: 20px auto;
     /* 上下外距 20px，左右⾃動置中 */
@@ -51,17 +45,44 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     /* 輕微陰影增添⽴體感 */
 }
-
+body.dark-mode section {
+    background-color: #244667;
+    border-color: #f4d771;
+    
+}
+/* 章節標題美化 */
 header {
-    background-color: #eeaf6c;
-    color: #333333;
+    background-color: #f8b674;
+    color: #000000;
     padding: 20px;
     text-align: center;
 }
-
+body.dark-mode header {
+    background-color: #244667;
+}
 header h1 {
     margin: 0;
     font-size: 24px;
+}
+body.dark-mode h1 {
+    color: #fbd085;
+}
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #7bb4da;
+    padding-bottom: 8px;
+    margin-top: 20px;
+}
+body.dark-mode h2 {
+    color: #e8cb99;
+    border-bottom-color: #ffd180;
+}
+
+h3 {
+    color: #333333;
+}
+body.dark-mode h3 {
+    color: #e8cb99;
 }
 
 p {
@@ -69,15 +90,13 @@ p {
     font-size: 15px;
     padding: 0.5mm;
 }
-
 /* 導覽列超連結樣式 (後代選擇器) */
 nav {
     margin-top: 10px;
 }
-
 nav a {
     color: #ffe6c7;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
-    }
+}

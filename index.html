@@ -22,13 +22,17 @@
             <a href="index.html">⾸⾴</a> |
             <a href="https://www.shu.edu.tw/" target="_blank">世新⼤學⾸⾴</a>
         </nav>
+        <button id="theme-btn" onclick="toggleTheme()">🌙
+            切換深⾊模式</button>
     </header>
     <section>
         <h2>關於我的學習⽬標</h2>
         <p>這是我在世新⼤學網⾴設計通識課的第三週練習作品。</p>
         <p>我希望透過這堂課可以了解寫程式的時候用的代碼的意義，
         <p>畢竟現在AI很發達，如果能夠學會如何使用並且給出指令，就可以有很多地方可以拿來應用！</p>
-        <img src="IMG_7295.PNG" width="700" alt="我的照片Logo">
+        <button onclick="showSmartGreeting()">💡 取得今⽇學習動⼒問候語</button>
+        <br><br>
+        <img src="IMG_7295.PNG" class="photo" width="700" alt="我的照片Logo">
         <h3>本週學會的技能列表：</h3>
         <ul>
             <li>掌握 HTML5 基礎結構與幕後 head 設定</li>
@@ -61,6 +65,8 @@
     <footer>
         <p>© 2026 施芊華 All Rights Reserved.</p>
     </footer>
+    <!-- 引⼊外部 JavaScript 檔案 -->
+    <script src="script.js"></script>
 </body>
 
 </html>
